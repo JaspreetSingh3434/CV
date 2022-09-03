@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body >
+    <section>
+    <form action="mailto:info@" enctype="text/plain" method="post">
+    <div class="blur"><h1 id="noblur">Payment Form</h1></div>
+    <hr>
+    
+    <div class="user">
+        <h2>User Information</h2>
+        
+            <label for="name">Name:</label>
+            <input type="text" name="Name" id="name" placeholder="e.g Jack Leach">
+          
+            <fieldset>
+                <legend>Gender</legend>
+                <input type="radio" name="gender" id="male">Male
+                <input type="radio" name="gender" id="female">Female
+            </fieldset>
+            <div><label for="address">Address</label>
+            <textarea name="address" id="address"  placeholder="Enter your address"></textarea></div>
+            <div><label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="leach@gmail.com"></div>
+            <div><label for="pincode">Pin Code:</label>
+            <input type="text" id="pincode" placeholder="e.g. 450001"></div>
+    </div>
+    <div class="paymentinformation">
+        <h2>Payment Information</h2>
+        <label for="Card Type">Card Type:</label>
+        <select name="card" id="Card Type" >
+            <option value="select">---Select Card Type---</option>
+            <option value="Debit Card">Debit Card</option>
+            <option value="Credit Card">Credit Card</option>
+            <option value="Net Banking">Net Banking</option>
+            <option value="Upi">Upi</option>
+        </select>
+        <div> <label for="cardnum">Card Number:</label>
+        <input type="number" id="cardnum" placeholder="e.g. 123412341234"></div>
+        <div>
+            <label for="exp date">Expiration Date:</label>
+            <input type="date" name="date" id="expdate" maxlength="19" minlength="8">
+        </div>
+        <div>
+            <label for="cvv">CVV</label>
+            <input type="password" name="cvv" id="cvv" placeholder="e.g. 123" maxlength="3">
+        </div>
+        <div>
+            <input type="submit" value="Pay Now">
+            <input type="reset">
+        </div>
+    </div>
+    </form>
+</section>
+</body>
+</html>
